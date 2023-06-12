@@ -3,8 +3,7 @@
     <meta charset="utf-8">
     <meta name="about me" content="Jacob Brinkmann's Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/landing.css">
-    <link rel="javascript" href="js/landing.js">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="author" content="Jacob Brinkmann">
 </head>
 <html>
@@ -29,9 +28,93 @@
   --color-white: #FFF;
 }
         -->
-        <div class="tile_index">
+        <div class="tile_body" id="ZEUS-discript" style="display:none">
+            <button class="exit">X</button>
+            <img src="static/Zeus_Sexy.png" alt="ZEUS" class="tile_image">
+            <h1>NSF ZEUS Laser Facility Gérard Mourou Center for Ultrafast Optical Science</h1>
+            <h2>Full Stack Development Intern</h2>
+            <h4>Spring 2023 - Present</h4>
+            ZEUS, short for Zettawatt Equivalent Ultrafast Pulse Laser System, will be the most powerful
+            laser in the United States upon completion and opening in October 2023. Being National Science 
+            Foundation funded, ZEUS will be used for a wide variety of research projects, meaning there
+            needs to be a way for researchers to submit proposals to use the laser. This is where I come in.
+            <br/>
+            <br/>
+            In May 2023 I joined the ZEUS team as a full stack development intern. My job is to develop crucial
+            functionalities of the Web Portal which will be used by researchers to submit proposals to use the 
+            laser. So far, I have developed the user registration, verification, login, password reset, forgot 
+            password, email change and other key authorization functionalities. I am currently building help 
+            ticket system for the site, utilizing gmail's API to receive help inquires and generate tickets. I 
+            am also developing a web calendar display for researchers and lab staff to view planned lab usage. 
+            I have been working with one lead developer, meaning that I have been able to get my hands dirty 
+            with the whole site. The site has been developed with Python Flask, SQL, Javascript, CSS, Globus, 
+            HTML, and other tools. I have learned tons about web development and am excited to continue to learn. 
+        </div>
+        <div class="tile_body" id="SPARK-discript" style="display:none;">
+            <button class="exit">X</button>
+            <img src="static/sparklogo.png" alt="SPARK" class="tile_image">
+            <h1>Spark Electric Racing, Software Team</h1>
+            <h2>Software Developer</h2>
+            <h4>Winter 2023 - Present</h4>
+            Spark is an student run electric motorcyle team. I am currently working 
+            on the software team, where I am developing a data interpretation program for 
+            the bike's hardware. This program will be used to analyze the bike's performance 
+            and make adjustments to the bike's settings. I am also getting involved with
+            building a web-scrapper tool for our business team to use to find potential sponsors.
+            <br/>
+            <br/>
+            Sense joining Spark I have found my community of fellow software devs at Michigan
+            and would highly recommend joining Spark or another Wilson Center Project Team to 
+            any students. Also, I love the fact that I get to work on not just any electric vehicle,
+            but badass electric motorcycles, with FBS (the new bike being developed) being able to
+            go 0-60 in less that 4 seconds and reach speeds over 150 mph. My favorite memories has
+            got to be the seemingly endless supply of 'Starry' pop (soda for those outside of Michigan) 
+            that we had due to a sponsorship with the company at the end of last semester.
+        </div>
+        <div class="tile_body" id="MSCG-discript" style="display:none">
+            <button class="exit">X</button>
+            <img src="static/MSCG.png" alt="MSCG" class="tile_image">
+            <h1>Michigan Sport Consulting Group</h1>
+            <h2>Client Strategy Managerp</h2>
+            <h4>Winter 2023 - Present</h4>
+            After several semesters with MSCG, I was selected to overhaul the clubs client aquisition
+            strategy, which had been lacking in recent years. Throughout the Winter 2023 semester I 
+            , alonside my team, researched operations of other consulting clubs through interviews and 
+            surverys. Also, my team and me dug through the data of past clients, documents kept during 
+            past aquisition cycles, and interviewed past members of the club involved in client aquisition.
+            My team's findings are beggining to be implemented this summer as MSCG begins to reach out to 
+            potential clients for the Fall 2023 semester.
+            <h2>Consulting Analyst</h2>
+            <h4>Fall 2021 - Winter 2023</h4>
+            I joined MSCG back during first semester of my freshman year, so I have been involved in this 
+            student organization my entire college career. As such, I have been able to work on some very 
+            cool projects. In Winter 2022, I worked on a project for the New York Islanders, who were concerned 
+            about attracting fans from all around the New York Metropolitan area to their brand new stadium. 
+            My favorite project was working with the owner of the West Michigan Whitecaps and Traverse City 
+            Pitspitters minor league baseball teams. We conducted an Economic Impact Report for both teams, 
+            analyzing the affect the teams have had on their respective communities through the use of economic 
+            multipliers, and a spatial analysis of properties surrounding the stadium (I began development of 
+            my python package SpatDAPy to support this project). I was able to present to both of these clients 
+            which was a great experience.
+            MSCG has taught me tons about team work, management, public speaking, time management, and much much 
+            more.
+        </div>
+        <div class="tile_body" id="PT-discript" style="display:none">
+            <button class="exit">X</button>
+            <img src="static/logo-recsports.svg" alt="PT" class="tile_image">
+        </div>
+        <div class="tile_body" id="SpatDAPy-discript" style="display:none">
+            <button class="exit">X</button>
+            <img src="static/SpatDApy.svg" alt="SpatDAPy" class="tile_image">
+        </div>
+        <div class="tile_body" id="CHN-discript" style="display:none">
+            <button class="exit">X</button>
+            <img src="static/CHN-Logo-Horizonta-C.svg" alt="ZEUS" class="tile_image">
+        </div>
+
+        <div class="tile_index" id="tile_index">
             <div class="tile" style="background-color: #00a6e8;" id="ZEUS-tile">
-                <img src="static/Zeus_Sexy2.png" alt="ZEUS" class="tile_image">
+                <img src="static/Zeus_Sexy.png" alt="ZEUS" class="tile_image">
                 <h2>Full-Stack Developer</h2>
                 <p>Summer 2023</p>
             </div>
@@ -67,10 +150,12 @@
                 <img src="static/CHN-Logo-Horizonta-C.svg" alt="ZEUS" class="tile_image">
                 <div class="tile_text">
                     <h2>Coronavirus Emergency Aid Team Lead</h2>
-                    <p>Summer 2022</p>
+                    <p>Summer 2021 & Spring-Summer 2022</p>
                 </div>
             </div>
 
         </div>
     </body>
+    <script src="js/script.js"></script>
+
 </html>
