@@ -30,8 +30,19 @@ body {
   font-size: 2.0vh;
   text-align: right;
   font-style: italic;
+}
 
-  
+#footer {
+  background-color: rgba(245, 245, 245, 0.375);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 15%;
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+  position:relative;
+
 }
 
 #icon {
@@ -57,7 +68,7 @@ body {
   vertical-align: middle;
 }
 
-.header {
+.main {
   background-color: rgba(245, 245, 245, 0.375);
   padding: 2rem;
   border-radius: 100px;
@@ -100,6 +111,7 @@ p {
   background-color: rgba(245, 245, 245, 0.375);
   margin:auto;
   width:70%;
+  height: fit-content;
   padding: 20px;
   margin-bottom: 30px rgba(255, 255, 255, 0);
 }
