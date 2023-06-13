@@ -45,6 +45,20 @@ body {
 
 }
 
+.icon-container {
+  width: fit-content;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 6.5vh;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  float: left;
+  padding-left: 15px;
+}
+
 #icon {
   text-align: left;
   float: left;
