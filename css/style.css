@@ -162,6 +162,14 @@ p {
   margin-bottom: 30px rgba(255, 255, 255, 0);
 }
 
+.tile_body img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*#ZEUS-discript {
   background-image: url("../static/Zeus_Sexy.png");
   background-repeat: no-repeat;
@@ -189,11 +197,25 @@ p {
   margin-bottom: 2rem;
 }
 
+#tile-title {
+  background-color: red;
+  background-color: rgba(245, 245, 245, 0.375);
+  height: fit-content;
+  width: 80%;
+  margin: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 .tile_index {
   background-color: rgba(245, 245, 245, 0.375);
   height: fit-content;
   width: 80%;
-  border-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   display: grid;
   column-gap: 5%;
   grid-template-columns: 1fr 1fr 1fr;
@@ -217,7 +239,6 @@ p {
   justify-content: center;
   transition: transform 0.3s ease;
   vertical-align: middle;
-  
 }
 
 .tile:hover {
