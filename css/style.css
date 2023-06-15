@@ -14,7 +14,7 @@ body {
   color: rgb(14, 14, 14);
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: auto;
   background: radial-gradient(circle at bottom, var(--color-white), transparent 80%),
               linear-gradient(to top, var(--color-blue) 0%, transparent 70%),
               linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.4) 70%),
@@ -37,26 +37,49 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 15%;
+  height: 16%;
   width: 100%;
   margin-top: 20px;
   overflow: hidden;
   position:relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
 
+}
+.footer-text {
+  font-size: 1.5vh;
+  text-align: center;
+  font-style: italic;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  font-weight: 500;
+}
+.footer-text li {
+  padding: 5px;
+  margin: auto;
+  list-style-type: none;
+  vertical-align: middle;
 }
 
 .icon-container {
-  width: fit-content;
-  height: 40px;
-  padding-left: 10px;
-  padding-top: 6.5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .social-icon {
-  width: 40px;
-  height: 40px;
-  float: left;
-  padding-left: 15px;
+  width: 2.5vh;
+  height: 2.5vw;
+  padding-left:7.5px;
+  padding-right: 7.5px;
 }
 
 #icon {
