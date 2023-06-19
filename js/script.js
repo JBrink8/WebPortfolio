@@ -13,33 +13,40 @@ const SpatDAPydiscript = document.getElementById('SpatDAPy-discript');
 const CHNdiscript = document.getElementById('CHN-discript');
 
 const tile_index = document.getElementById('tile_index');
+const tile_title = document.getElementById('tile-title');
 
 function displayZEUS() {
+    tile_title.style.display = 'none';
     tile_index.style.display = 'none';
     ZEUSdiscript.style.display = 'block';
 }
 
 function displaySPARK() {
+    tile_title.style.display = 'none';
     tile_index.style.display = 'none';
     SPARKdiscript.style.display = 'block';
 }
 
 function displayMSCG() {
+    tile_title.style.display = 'none';
     tile_index.style.display = 'none';
     MSCGdiscript.style.display = 'block';
 }
 
 function displayPT() {
+    tile_title.style.display = 'none';
     tile_index.style.display = 'none';
     PTdiscript.style.display = 'block';
 }
 
 function displaySpatDAPy() {
+    tile_title.style.display = 'none';
     tile_index.style.display = 'none';
     SpatDAPydiscript.style.display = 'block';
 }
 
 function displayCHN() {
+    tile_title.style.display = 'none';
     tile_index.style.display = 'none';
     CHNdiscript.style.display = 'block';
 }
