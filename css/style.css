@@ -42,8 +42,6 @@ body {
   margin-top: 20px;
   overflow: hidden;
   position:relative;
-  display: grid;
-  grid-template-columns: auto auto auto;
   padding-top: 5px;
 
 }
@@ -209,14 +207,23 @@ p {
   padding-top: 5px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  font-size: 1.3vw;
 }
 
 .tile_index {
-  background-color: rgba(245, 245, 245, 0.375);
+  background-color: #f5f5f560;
   height: fit-content;
   width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  padding: 5%;
+  
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  align-items: center;
+  /*
   display: grid;
   column-gap: 5%;
   grid-template-columns: 1fr 1fr 1fr;
@@ -227,11 +234,12 @@ p {
   padding: 5%;
   margin: auto;
   justify-content: center;
+  */
 }
 
 .tile {
   height: 30vh;
-  width: 20vw;
+  width: 14vw;
   background-color: rgba(245, 245, 245);
   padding: 5%;
   text-align: center;
@@ -240,22 +248,25 @@ p {
   justify-content: center;
   transition: transform 0.3s ease;
   vertical-align: middle;
-  ;
+  margin: 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tile p {
-  font-size: 1.5vw;
+  margin: 0px;
   margin-top: 5px;
 }
 .tile h2 {
   font-size: 2vw;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 5px;
 }
 .tile img {
   margin-top: 10px;
   margin-bottom: 10px;
-  width:75%;
+  width:90%;
 }
 
 .tile:hover {
@@ -267,6 +278,9 @@ p {
   height:auto;
   vertical-align: middle;
 
+}
+.tile_text {
+  margin:auto;
 }
 
 .new-div-2 {
