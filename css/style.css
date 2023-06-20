@@ -180,12 +180,13 @@ p {
   background-color: red;
   border: transparent;
   background-size: contain;
-  border-radius: 100spx;
+  border-radius: 500px;
   text-align: center;
   vertical-align: middle;
   margin:auto;
   color:rgb(245, 245, 245);
   cursor: pointer;
+  font-size: 10px;
   background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6+ */
 
 }
@@ -242,8 +243,8 @@ p {
 }
 
 .tile {
-  height: 30vh;
-  width: 14vw;
+  height: 25vh;
+  width: 25vh;
   background-color: rgba(245, 245, 245);
   padding: 5%;
   text-align: center;
@@ -265,8 +266,9 @@ p {
   font-size: 1.7vw;
 }
 .tile h2 {
-  font-size: 2.0vw;
+  font-size: 1.9vw;
   font-weight: 400;
+  margin-top: 0;
   margin-bottom: 5px;
 }
 .tile img {
