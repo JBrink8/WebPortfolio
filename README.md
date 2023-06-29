@@ -3,7 +3,7 @@ My Personal Portfolio Website Source Code
 
 <h1>Project Goal</h1>
 <p>
-  The goal of this project is to create a digital platform for myself to show my interests, keep up to date about what 
+  The goal of this project is to create a digital platform to show my interests, keep up to date about what 
   I am doing, and occassional make the blog post.
 </p>
 <br\>
