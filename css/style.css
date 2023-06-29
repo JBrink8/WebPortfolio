@@ -60,6 +60,10 @@ body {
   overflow: hidden;
   font-weight: 500;
 }
+.footer-text ul {
+  margin: auto;
+  padding-top: 20px;
+}
 .footer-text li {
   margin-top: 5px;
   padding: 5px;
