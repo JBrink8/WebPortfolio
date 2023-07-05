@@ -50,13 +50,14 @@ function displayCHN() {
     tile_index.style.display = 'none';
     CHNdiscript.style.display = 'block';
 }
-
+if (ZEUStile) {
 ZEUStile.addEventListener('click', displayZEUS);
 SPARKtile.addEventListener('click', displaySPARK);
 MSCGtile.addEventListener('click', displayMSCG);
 PTtile.addEventListener('click', displayPT);
 SpatDAPytile.addEventListener('click', displaySpatDAPy);
 CHNtile.addEventListener('click', displayCHN)
+}
 
 var exitbuttons = document.getElementsByClassName('exit');
 
