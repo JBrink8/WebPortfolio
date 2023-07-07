@@ -372,6 +372,7 @@ p {
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
+  cursor: pointer;
 }
 
 .dropdown-content {
@@ -396,6 +397,7 @@ p {
 
 .dropdown-content a:hover {
   background-color: #ddd;
+  cursor: pointer;
 }
 
 
