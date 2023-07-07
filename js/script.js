@@ -67,3 +67,13 @@ for (let i = 0; i < exitbuttons.length; ++i) {
 
     })
 };
+
+document.getElementById('DropButton').addEventListener('click', function() {
+    const menu = document.getElementById('dropdown-content');
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+    }
+    else {
+        menu.style.display = 'block';
+    }
+})
