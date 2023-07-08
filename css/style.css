@@ -62,6 +62,7 @@ body {
   right: 0;
   overflow: hidden;
   font-weight: 500;
+  line-height: .7rem;
 }
 .footer-text ul {
   margin: auto;
