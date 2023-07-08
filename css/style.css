@@ -26,19 +26,19 @@ body {
 .nav-bar {
   width: 100%;
   height: 56px;
-  background-color: rgba(245, 245, 245, 0.375);
-  font-size: 2.0vh;
+  background-color: rgba(245, 245, 245, 0.5);
+  font-size: 1rem;
   text-align: right;
   font-style: italic;
   margin-bottom: 2%;
 }
 
 #footer {
-  background-color: rgba(245, 245, 245, 0.375);
+  background-color: rgba(245, 245, 245, 0.5);
   left: 0;
   right: 0;
   bottom: 0;
-  height: 17%;
+  height: 15%;
   width: 100%;
   overflow: hidden;
   position:relative;
@@ -48,11 +48,11 @@ body {
 
 }
 .footer-text {
-  font-size: 1.5vh;
+  font-size: 14px;
   text-align: center;
   font-style: italic;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   margin: auto;
   width: 100%;
   height: fit-content;
@@ -82,8 +82,7 @@ body {
 }
 
 .social-icon {
-  width: 2.5vh;
-  height: 2.5vw;
+  width: 25px;
   padding-left:7.5px;
   padding-right: 7.5px;
 }
@@ -112,7 +111,7 @@ body {
 }
 
 .main {
-  background-color: rgba(245, 245, 245, 0.375);
+  background-color: rgba(245, 245, 245, 0.5);
   padding: 1.5rem;
   border-radius: 100px;
   text-align: center;
@@ -155,6 +154,8 @@ p {
   font-size: 2.75vh;
   font-weight: 350;
   margin-bottom: 2rem;
+  line-height: 1.5em;
+  font-size: 1.5em;
 }
 
 .text_body {
@@ -164,6 +165,14 @@ p {
   height: fit-content;
   padding: 20px;
   margin-bottom: 30px rgba(255, 255, 255, 0);
+}
+.text_body ol {
+  margin-top: -20px;
+  font-size: 2.75vh;
+  font-weight: 350;
+  margin-bottom: 2rem;
+  line-height: 1.5em;
+  font-size: 1.5em;
 }
 
 .tile_body {
@@ -177,6 +186,13 @@ p {
 .tile_body img {
   width: 60%;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tile_icon {
+  width: 80px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -289,7 +305,7 @@ p {
   margin-top: 0;
   margin-bottom: 5px;
 }
-.tile img {
+.tile_image {
   margin-top: 10px;
   margin-bottom: 10px;
   width:100%;
@@ -344,11 +360,11 @@ p {
 }
 
 .headshot_container {
-  float:right;
+  float:left;
 }
 .headshot_container img {
- width: 90%;
- height: 90%;
+ width: 94%;
+ height: 94%;
 }
 
 @media (max-width: 700px) {
@@ -357,7 +373,7 @@ p {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 605px) {
   .horz_list {
       display: none;
   }
@@ -401,7 +417,7 @@ p {
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 605px) {
   .dropdown {
       display: none;
   }
