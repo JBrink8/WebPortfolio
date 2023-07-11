@@ -236,7 +236,6 @@ p {
 }
 
 #tile-title {
-  background-color: red;
   background-color: rgba(245, 245, 245, 0.375);
   height: fit-content;
   width: 80%;
@@ -246,7 +245,7 @@ p {
   padding-top: 5px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  font-size: 1.3vw;
+  font-size: 1.3vh;
 }
 
 .tile_index {
