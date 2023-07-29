@@ -17,7 +17,7 @@ body {
 }
 
 #command-in {
-    width: 100%;
+    width: 70%;
     height: fit-content;
     padding: 0;
     background-color: transparent;
@@ -25,12 +25,8 @@ body {
     font-family: "Poppins", system-ui;
     color: white;
     overflow: wrap;
-    flex: 2;
 }
 
-#command-box {
-    display: flex;
-}
 
 #computer-out {
     color: rgb(30, 243, 79);
@@ -38,7 +34,8 @@ body {
 
 #location {
     color: rgb(0, 157, 255);
-    flex: 1;
-    padding-right: 10px;
-    width: fit-content;
+    text-align: right;
+    clear: both;
+    float:left;
+    margin-right:15px;
 }
