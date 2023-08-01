@@ -373,7 +373,7 @@ p {
   }
 }
 
-@media (max-width: 605px) {
+@media (max-width: 770px) {
   .horz_list {
       display: none;
   }
@@ -423,7 +423,7 @@ p {
 }
 
 
-@media (min-width: 605px) {
+@media (min-width: 770px) {
   .dropdown {
       display: none;
   }
