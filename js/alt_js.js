@@ -5,7 +5,7 @@ const main = document.getElementById('main');
 
 
 ////////////////////////////////////////////////////////////////
-/////////////////////// ESILE SHIT BELOW //////////////////////
+/////////////////////// easel SHIT BELOW //////////////////////
 ///////////////////////////////////////////////////////////////
 
 var canvas, ctx, flag = false,
@@ -58,18 +58,18 @@ function draw() {
 }
 
 function erase() {
-    var m = confirm("Clear esile?");
+    var m = confirm("Clear easel?");
     if (m) {
         ctx.clearRect(0, 0, w, h);
     }
 }
 
 function saveContent() {
-    const content = esile.toDataURL();
+    const content = easel.toDataURL();
     
     const downloadLink = document.createElement('a');
     downloadLink.href = content;
-    downloadLink.download = 'esile.png';
+    downloadLink.download = 'easel.png';
     downloadLink.click();
 }
 
@@ -77,8 +77,8 @@ function findxy(res, e) {
     if (res == 'down') {
         prevX = currX;
         prevY = currY;
-        currX = e.clientX - esile.offsetLeft;
-        currY = e.clientY - esile.offsetTop;
+        currX = e.clientX - easel.offsetLeft;
+        currY = e.clientY - easel.offsetTop;
 
         flag = true;
         dot_flag = true;
@@ -97,39 +97,39 @@ function findxy(res, e) {
         if (flag) {
             prevX = currX;
             prevY = currY;
-            currX = e.clientX - esile.offsetLeft;
-            currY = e.clientY - esile.offsetTop;
+            currX = e.clientX - easel.offsetLeft;
+            currY = e.clientY - easel.offsetTop;
             draw();
         }
     }
 }
 
-function init_esile() {
-    esile = document.getElementById('esile');
-    ctx = esile.getContext("2d");
-    w = esile.width;
-    h = esile.height;
+function init_easel() {
+    easel = document.getElementById('easel');
+    ctx = easel.getContext("2d");
+    w = easel.width;
+    h = easel.height;
 
-    esile.addEventListener("mousemove", function (e) {
+    easel.addEventListener("mousemove", function (e) {
         findxy('move', e)
     }
     , false);
-    esile.addEventListener("mousedown", function (e) {
+    easel.addEventListener("mousedown", function (e) {
         findxy('down', e)
     }
     , false);
-    esile.addEventListener("mouseup", function (e) {
+    easel.addEventListener("mouseup", function (e) {
         findxy('up', e)
     }
     , false);
-    esile.addEventListener("mouseout", function (e) {
+    easel.addEventListener("mouseout", function (e) {
         findxy('out', e)
     }
     , false);
 }
 
 ////////////////////////////////////////////////////////////////
-///////////////////// ESILE SHIT DONE /////////////////////////
+///////////////////// easel SHIT DONE /////////////////////////
 ////////////////////////////////////////////////////////////////
 
 //No dict/hs structure in JS so I'll just use a js obj
@@ -158,11 +158,11 @@ const paths = {
     },
 }
 
-const esile_cmnds = {
+const easel_cmnds = {
     make: function() {
         var arr = input.value.split(' ');
         if (arr.length != 4) {
-            history.innerHTML += '<br/>' + 'Format input: esile make |len| |width|';
+            history.innerHTML += '<br/>' + 'Format input: easel make |len| |width|';
             return;
         }
         var len = arr[2];
@@ -171,47 +171,47 @@ const esile_cmnds = {
             history.innerHTML += '<br/>' + 'Invalid dimensions. Please enter two integers for length and width.';
             return;
         }
-        if (!document.getElementById('esile')) {
-            const esile = document.createElement('canvas');
-            esile.id = 'esile';
-            esile.width = len;
-            esile.height = width;
-            main.insertBefore(esile, main.firstChild);
-            init_esile();
+        if (!document.getElementById('easel')) {
+            const easel = document.createElement('canvas');
+            easel.id = 'easel';
+            easel.width = len;
+            easel.height = width;
+            main.insertBefore(easel, main.firstChild);
+            init_easel();
             return;
         }
         else {
-            history.innerHTML += '<br/>' + 'esile already exists';
+            history.innerHTML += '<br/>' + 'easel already exists';
             return;
         }
     },
     clear: function() {
-        if (!document.getElementById('esile')) {
-            history.innerHTML += '<br/>' + 'esile does not exist';
+        if (!document.getElementById('easel')) {
+            history.innerHTML += '<br/>' + 'easel does not exist';
         }
         else {
-            document.getElementById('esile').remove();
+            document.getElementById('easel').remove();
         }
     },
     save: function() {
-        if (!document.getElementById('esile')) {
-            history.innerHTML += '<br/>' + 'esile does not exist';
+        if (!document.getElementById('easel')) {
+            history.innerHTML += '<br/>' + 'easel does not exist';
         }
         else {
             saveContent();
         }
     },
     erase: function() {
-        if (!document.getElementById('esile')) {
-            history.innerHTML += '<br/>' + 'esile does not exist';
+        if (!document.getElementById('easel')) {
+            history.innerHTML += '<br/>' + 'easel does not exist';
         }
         else {
             erase();
         }
     },
     paintColor: function() {
-        if (!document.getElementById('esile')) {
-            history.innerHTML += '<br/>' + 'esile does not exist';
+        if (!document.getElementById('easel')) {
+            history.innerHTML += '<br/>' + 'easel does not exist';
         }
         else {
             var color_input = input.value.split(' ')[2];
@@ -230,7 +230,7 @@ const commands = {
                                 + '<li>' + 'ls' + '</li>' 
                                 + '<li>' + 'cd' + '</li>'
                                 + '<li>' + 'clear' + '</li>'
-                                + '<li>' + 'esile' + '</li>'
+                                + '<li>' + 'easel' + '</li>'
                                 + '<li>' + 'page' + '</li>'
                           + '</ul>';
     },
@@ -256,21 +256,21 @@ const commands = {
             history.innerHTML += '<br/>' + 'Invalid directory.';
         }
     },
-    esile: function() {
+    easel: function() {
         var args = input.value.split(' ');
         if (args.length === 1) {
-            history.innerHTML += '<br/>' + 'Available esile commands:' + '<br/>' 
+            history.innerHTML += '<br/>' + 'Available easel commands:' + '<br/>' 
                           + '<ul>' 
-                                + '<li>' + 'make |width| |length|' + '</li>'
-                                + '<li>' + 'clear' + '</li>'
-                                + '<li>' + 'save' + '</li>'
-                                + '<li>' + 'erase' + '</li>'
-                                + '<li>' + 'paintColor <color>' + '</li>'
+                                + '<li>' + 'easel make |width| |length|' + '</li>'
+                                + '<li>' + 'easel clear' + '</li>'
+                                + '<li>' + 'easel save' + '</li>'
+                                + '<li>' + 'easel erase' + '</li>'
+                                + '<li>' + 'easel paintColor <color>' + '</li>'
                           + '</ul>';
         }
         else {
-            if (args[1] in esile_cmnds) {
-                esile_cmnds[args[1]]();
+            if (args[1] in easel_cmnds) {
+                easel_cmnds[args[1]]();
             }
         }
     }
