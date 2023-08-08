@@ -1,0 +1,142 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Helvetica, "Lucida Console", monospace;
+    font-variant: small-caps;
+    overflow-y: scroll;
+}
+
+.invert-colors {
+    transform: invert(1);
+}
+
+.bulk {
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+}
+
+.bulk h1 {
+    font-size: 3em;
+    font-weight: bolder;
+    font-variant: small-caps;
+}
+
+.intro {
+    width: 100%;
+    overflow: hidden;
+}
+
+.bigName {
+    font-size: 8em;
+    font-weight: bolder;
+    text-align: left;
+    width: 50%;
+}
+.smallDescript {
+    width: 50%;
+    font-size: 2ems;
+    text-align: right;
+}
+
+.horz_scroll {
+    overflow: hidden;
+    height: 100%;
+    white-space: nowrap;
+    margin: 0;
+    height: 2.3em;
+    text-align: left;
+    font-weight: lighter;
+    width: 100%;
+    animation: scrollText 20s linear infinite;
+}
+
+#AdditionalInfo {
+    display: inline-block;
+    overflow: visible;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: fit-content;
+    font-variant: small-caps;
+  }
+  
+  .scrolling-text {
+    display: inline-block;
+    transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+    will-change: transform;
+    backface-visibility: hidden;
+  }
+  
+  .scrolling-text .scrolling-text-content {
+    color: #fff;
+    font-size: 3em;
+    white-space: nowrap;
+    transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+    line-height: 1em;
+  }
+  
+  .header {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1.2s ease-out;
+  }
+
+  .headerVisible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .subheader {
+    opacity: 1;
+    transform: translateX(-50px);
+    transition: all 1.2s ease-out;
+    text-align: center;
+  }
+
+  .subheaderVisible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .section {
+    padding-top: 200px;
+    margin:auto;
+  }
+  .sub-section {
+    padding-top: 100px;
+    min-height: 2.5em;
+    width: fit-content;
+    text-align: left;
+    padding-top: -100px;
+  }
+
+  .goLeft {
+    margin-right: 50%;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .goRight {
+    margin-left: 50%;
+    margin-bottom: 0px;
+    margin-right: 0px;
+  }
+  
+  .goCenter {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .TextBox {
+    margin-left:20%;
+    margin-right:20%;
+  }
+
+  .normalText {
+    font-size: 1.2em;
+    font-weight: lighter;
+  }

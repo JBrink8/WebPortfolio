@@ -145,16 +145,22 @@ function init_easel() {
 
 const paths = {
     index: function () {
-        window.location.href = 'index.html';
+        let pos = loc.innerText.indexOf(':')
+        loc.innerText = loc.innerText.slice(0, pos) + '/index' + loc.innerText.slice(pos);
+        //loc.innerText += '/index';
+        //window.location.href = 'index.html';
     },
     projects: function () {
-        window.location.href = 'projects.html';
+        loc.innerText = loc.innerText.slice(0, pos) + '/projects' + loc.innerText.slice(pos);
+        //window.location.href = 'projects.html';
     },
     about: function () {
-        window.location.href = 'about.html';
+        loc.innerText = loc.innerText.slice(0, pos) + '/about' + loc.innerText.slice(pos);
+        //window.location.href = 'about.html';
     },
     blog: function () {
-        window.location.href = 'blog.html';
+        loc.innerText = loc.innerText.slice(0, pos) + '/blog' + loc.innerText.slice(pos);
+        //window.location.href = 'blog.html';
     },
 }
 
@@ -238,11 +244,16 @@ const commands = {
         history.innerHTML = '';
     },
     ls: function() {
-        history.innerHTML += '<br/>' + 'Available directories:' + '<br/>' 
+        history.innerHTML += '<br/>' + 'Curr directory content:' + '<br/>' 
                           + '<ul>' 
-                                + '<li>' + 'index' + '</li>'
-                                + '<li>' + 'projects' + '</li>'
-                                + '<li>' + 'about' + '</li>' 
+                                + '<li>' + 'index.html' + '</li>'
+                                + '<li>' + 'projects.html' + '</li>'
+                                + '<li>' + 'about.html' + '</li>' 
+                                + '<li>' + 'blog.html' + '</li>'
+                                + '<li>' + 'SVG' + '</li>'
+                                + '<li>' + 'js' + '</li>'
+                                + '<li>' + 'css' + '</li>'
+                                + '<li>' + 'static' + '</li>'
                                 + '<li>' + 'blog' + '</li>'
                           + '</ul>';
     },
