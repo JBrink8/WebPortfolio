@@ -192,14 +192,13 @@ function checkForVisibility() {
         }
     });
 
-    var scroll = document.querySelectorAll('.container');
-    scroll.forEach(function(scroll) {
-    if (isElementInViewport(scroll)) {
+    /*
+    var invert = document.getElementById('last')
+    if (isElementInViewport(invert)) {
         document.body.classList.remove("invert-colors");
     } else {
         document.body.classList.add("invert-colors");
-    }
-    });
+    }*/
 }
   
   function isElementInViewport(el) {
@@ -219,3 +218,20 @@ function checkForVisibility() {
     addEventListener("load", checkForVisibility, false);
     addEventListener("scroll", checkForVisibility, false);
 }
+
+var michText = document.querySelectorAll('.goBlue');
+michText.forEach(function(text) {
+    var gBlues = text.innerText.split('!');
+    text.innerText = '';
+
+    for (let i = 0; i < gBlues.length; ++i) {
+        const coloredGBlue = document.createElement('span');
+        if (i % 2 == 0) {
+        coloredGBlue.style.color = '#00274C';
+        } else {
+            coloredGBlue.style.color = '#FFCB05';
+        }
+        coloredGBlue.innerText = gBlues[i] += '!';
+        text.appendChild(coloredGBlue);
+    }
+});
