@@ -15,8 +15,6 @@ body {
     -webkit-transition: color 10000ms linear;
     -ms-transition: color 10000ms linear;
     transition: color 10000ms linear;
-
-
 }
 
 .bulk {
@@ -29,6 +27,7 @@ body {
     font-size: 3em;
     font-weight: bolder;
     font-variant: small-caps;
+    text-align: center;
 }
 
 .bulk img {
@@ -47,7 +46,6 @@ body {
     width: 50%;
 }
 .bigCenter {
-    padding-top: 1em;
     font-size: 4em;
     font-weight: bolder;
     text-align: center;
@@ -156,6 +154,12 @@ body {
     line-height: 1.5em;
     font-weight: lighter;
   }
+  .biggerText {
+    font-size: 2em;
+    line-height: 2em;
+    font-weight: lighter;
+    overflow: wrap;
+  }
 
   .nav-bar {
     width: 15%;
@@ -184,7 +188,7 @@ body {
 
   .spacer {
     width: 100%;
-    height: 200px;
+    height: 150px;
   }
 
   .bordered {
@@ -205,68 +209,34 @@ body {
     height: fit-content;
   }
 
-.back {
-    transform: translateZ(-100px) rotateY(180deg);
-    background-color: red;
-    opacity: 0.5;
-}
-
-.right {
-    transform: rotateY(-270deg) translateX(100px);
-    transform-origin: top right;
-    background-color: green;
-    opacity: 0.5;
-}
-
-.left {
-    transform: rotateY(270deg) translateX(-100px);
-    transform-origin: center left;
-    background-color: yellow;
-    opacity: 0.5;
-}
-
-.top {
-    transform: rotateX(-90deg) translateY(-100px);
-    transform-origin: top center;
-    background-color: purple;
-    opacity: 0.5;
-}
-
-.bottom {
-    transform: rotateX(90deg) translateY(100px);
-    transform-origin: bottom center;
-    background-color: orange;
-    opacity: 0.5;
-}
-
-.front {
-    transform: translateZ(100px);
-    background-color: blue;
-    opacity: 0.5;
-}
-
-.wrapper {
-    perspective: 800px;
-    perspective-origin: 50% 100px;
-    margin-left: 100px;
-    margin-top: 100px;
-}
-
-.cube {
-    position: relative;
-    width: 200px;
-    transform-style: preserve-3d;
-    animation: spin 5s infinite linear;
-}
-
-.cube div {
-    position: absolute;
-    width: 200px;
-    height: 200px;
+  .wrapper {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    margin-top: auto;
+    margin-bottom: auto;
     text-align: center;
-}
+  }
 
-@keyframes spin {
-    from { transform: rotateY(0); }
-    to { transform: rotateY(360deg); }
-}
+  #sliding {
+    width: 300px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .CoT {
+    display: none;
+  }
+
+  @media (max-width: 700px) {
+    .imgContainer {
+        display:none;
+    }
+    .scrolling-text {
+        display:none;
+    }
+  }

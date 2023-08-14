@@ -219,6 +219,8 @@ function checkForVisibility() {
     addEventListener("scroll", checkForVisibility, false);
 }
 
+
+
 var michText = document.querySelectorAll('.goBlue');
 michText.forEach(function(text) {
     var gBlues = text.innerText.split('!');
@@ -235,3 +237,26 @@ michText.forEach(function(text) {
         text.appendChild(coloredGBlue);
     }
 });
+
+var opt = 2;
+var options = document.querySelectorAll('.CoT');
+options[opt].style.display = 'block';
+const slide = document.getElementById('sliding');
+var height = document.getElementById('getMe').offsetHeight;
+height = (height/4);
+console.log(height);
+slide.style.paddingTop = height + 'px';
+slide.style.paddingBottom = height + 'px';
+
+function changeShow() {
+    if (opt > options.length - 1) {
+        opt = 0;
+    }
+    options.forEach(function(option) {
+        option.style.display = 'none';
+    });
+    options[opt].style.display = 'block';
+    opt++;
+}
+
+setInterval(changeShow, 3500);
