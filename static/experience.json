@@ -1,0 +1,146 @@
+[
+    {
+        "title": "ZEUS Lab",
+        "subtitle": "Full Stack Developement Intern",
+        "start": "5/1/2023",
+        "end": "8/18/2023",
+        "skills": "Python Flask, JavaScript, SQL, SQalchemy, Front-End, Back-End, Full-Stack, Web Design, Code Review, Git, Github, Jira, Google Workspace, Gmail API",
+        "category": "Web"
+    },
+    {
+        "title": "EECS 485",
+        "subtitle": "Web Systems",
+        "start": "8/31/2023",
+        "end": "12/15/2023",
+        "skills": "REST APIs, DNS, Cloud Computing, Text analysis for web search, Sessions, Web Security, SQL, AWS, HTML, CSS, Python, Javascript, Flask, React, Linux System Administration, Git, Github, Parallel Programming",
+        "category": "Web"
+    },
+    {
+        "title": "EECS 281",
+        "subtitle": "Data Structures and Algorithms",
+        "start": "1/1/2023",
+        "end": "4/21/2023",
+        "skill": "algorithm analysis and O-notation, fundamental data structures including lists, stacks, queues, priority queues, hash tables, binary trees, search trees, balanced trees and graphs, searching and sorting algorithms, recursive algorithms, basic graph algorithms, greedy algorithms and divide and conquer strategy",
+        "category": "DS&A"
+    },
+    {
+        "title": "EECS 280",
+        "subtitle": "Programming and Introductory Data Structures",
+        "start": "8/31/2022",
+        "end": "12/15/2022",
+        "skill": "Container Data Structures, Recursion, Generic Programming, Higher-Order Functions, Testing and debugging, Stacks and queues, Linked lists and binary trees",
+        "category": "DS&A"
+    },
+    {
+        "title": "EECS 183",
+        "subtitle": "Elementary Programming Concepts",
+        "start": "1/1/2022",
+        "end": "4/21/2022",
+        "skill": "Foundational C++ Knowledge without use of STL",
+        "category": "DS&A"
+    },
+    {
+        "title": "EECS 376",
+        "subtitle": "Theory of Computation",
+        "start": "8/31/2023",
+        "end": "12/15/2023",
+        "skill": "Divide & Conquer, Dynamic Programming, Greedy Algorithms, Formal Languages and Finite Automata, Turing Machines and Decidability, Diagonalization, Acceptance and Halting Problems, Reducibility, Rice's Theorem",
+        "category": "Math"
+    },
+    {
+        "title": "EECS 203",
+        "subtitle": "Discrete Mathematics",
+        "start": "5/1/2022",
+        "end": "8/1/2022",
+        "skill": "Logics and Proofs, Sets and functions, Algorithms and comlexity, Mathematical induction, Counting, permutations, combinations, Relations and partial orderings, Graphs and connectivity",
+        "category": "Math"
+    },
+    {
+        "title": "MATH 214",
+        "subtitle": "Applied Linear Algebra",
+        "start": "8/31/2023",
+        "end": "12/15/2023",
+        "skill": "matrix operations, echelon form, solution of systems of linear equations, Euclidean vector spaces, linear combinations, independence and spans of sets of vectors in Euclidean space, eigenvectors and eigenvalues, similarity theory",
+        "category": "Math"
+    },
+    {
+        "title": "MATH 116",
+        "subtitle": "Calulus II",
+        "start": "1/1/2022",
+        "end": "4/21/2022",
+        "skill": "Integration, Differential Equations, Sequences and Series, Power Series, Taylor Series, Parametric Equations, Polar Coordinates, Vectors, Vector-Valued Functions, Functions of Several Variables, Partial Derivatives, Multiple Integrals, Vector Calculus",
+        "category": "Math"
+    },
+    {
+        "title": "BIOPHYS 117",
+        "subtitle": "Introduction to Programming in the Sciences",
+        "start": "8/31/2022",
+        "end": "12/15/2022",
+        "skill": "Python, Python Pandas, Matplotlib, Numpy, Scipy, Jupyter Notebook, Data Visualization, Data Analysis, Data Manipulation, Data Cleaning, Data Science, Data Engineering, Data Analytics, Data Mining, Data Modeling, Data Structures, Data Warehousing, Data Architecture, Data Quality, Data Governance, Data Security, Data Storage, Data Integration, Data Migration, Data Transformation, Data Visualization, Data Visualization, Data Visualization",
+        "category": "Data"
+    },
+    {
+        "title": "SPARK Electric Racing Software Team",
+        "subtitle": "Data Subteam Developer",
+        "start": "1/1/2023",
+        "end": "12/15/2023",
+        "skill": "hexidecimal interpretation, JIRA, working with embedded systems, collabrative coding, applied problem solving, pandas, matplotlib, data visualization, data cleaning, data analysis",
+        "category": "Data"
+    },
+    {
+        "title": "Michigan Sports Consulting Group",
+        "subtitle": "SpatDAPy Package Developer",
+        "start": "8/1/2022",
+        "end": "1/1/2023",
+        "skill": "automating workflows with code, data visualization, pandas, GeoPy, matplotlib, data cleaning",
+        "category": "Data"
+    },
+    {
+        "title": "Michigan Sports Consulting Group",
+        "subtitle": "Client Stratey Manager",
+        "start": "1/1/2023",
+        "end": "4/15/2023",
+        "skill": "team management, project management, client relations, client management, presentation skills, research, task delegation",
+        "category": "Leadership"
+    },
+    {
+        "title": "Community Housing Network",
+        "subtitle": "CERA Team Lead",
+        "start": "5/1/2022",
+        "end": "8/15/2022",
+        "skill": "team management, delegation, project management, client relations, client management, presentation skills, research, task deligation",
+        "category": "Leadership"
+    },
+    {
+        "title": "West Quadrangle Residential Hall Council",
+        "subtitle": "Treasurer",
+        "start": "9/20/2021",
+        "end": "4/15/2022",
+        "skill": "excel, accouting, event planning, budgeting",
+        "category": "Leadership"
+    },
+    {
+        "title": "Phi Delta Theta",
+        "subtitle": "Recruitment Chairman",
+        "start": "6/30/2022",
+        "end": "4/15/2023",
+        "skill": "event planning, group coordination, budget management, applicant evaluation",
+        "category": "Leadership"
+    },
+    {
+        "title": "Community Housing Network",
+        "subtitle": "CERA Specialist",
+        "start": "5/1/2021",
+        "end": "8/15/2021",
+        "skill": "client relations, goal achieving, coordinating relief distribution, excel, coordinating with courts and landlords",
+        "category": "Other"
+    },
+    {
+        "title": "Michigan Sports Consulting Group",
+        "subtitle": "Analyst",
+        "start": "9/1/2021",
+        "end": "1/1/2023",
+        "skill": "research, presentation skills, team work",
+        "category": "Other"
+    }
+]
