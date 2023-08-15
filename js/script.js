@@ -243,7 +243,7 @@ var options = document.querySelectorAll('.CoT');
 options[opt].style.display = 'block';
 const slide = document.getElementById('sliding');
 var height = document.getElementById('getMe').offsetHeight;
-height = (height/4);
+height = (height/5);
 console.log(height);
 slide.style.paddingTop = height + 'px';
 slide.style.paddingBottom = height + 'px';
@@ -260,3 +260,186 @@ function changeShow() {
 }
 
 setInterval(changeShow, 3500);
+
+
+/*var allStylish = document.querySelectorAll('.stylishTextContain');
+let largestWidth = 0;
+var largestDiv = null;
+allStylish.forEach(function(elems) {
+    if (elems.offsetWidth > largestWidth) {
+        largestWidth = elems.offsetWidth;
+        largestDiv = elems;
+    }
+});
+if (largestDiv) {
+    allStylish.forEach(function(elems) {
+        elems.style.width = largestWidth + 'px';
+    });
+}*/
+
+let experience = [];
+fetch("static/experience.json")
+    .then(response => {
+    return response.json();
+    })
+    .then(data => experience=data);
+
+
+const eContain = document.getElementById('experWrap');
+
+function populateCategory(keys, map) {
+    keys.forEach(function(key) {
+        if(map[key]) {
+            const container = document.createElement('div');
+            container.classList.add('whatUpDoe', 'sub-section');
+            eContain.appendChild(container);
+            const title = document.createElement('div');
+            title.classList.add('StylishText', 'makeBlue');
+            if (key === 'Web') {
+                const italic = document.createElement('i');
+                italic.innerText = "Web Systems \n & Development";
+                title.appendChild(italic);
+            }
+            else if (key === 'DS&A') {
+                const italic = document.createElement('i');
+                italic.innerText = "Data Structures \n & Algorithms";
+                title.appendChild(italic);
+            }
+            else if (key === 'Data') {
+                const italic = document.createElement('i');
+                italic.innerText = "Data-Driven \n Development";
+                title.appendChild(italic);
+            }
+            else if (key === 'Leadership') {
+                const italic = document.createElement('i');
+                italic.innerText = "Leadership \n & Teamwork";
+                title.appendChild(italic);
+            }
+            else if (key === 'Math') {
+                const italic = document.createElement('i');
+                italic.innerText = "Mathematics \n & Theory";
+                title.appendChild(italic);
+            }
+            else {
+                const italic = document.createElement('i');
+                italic.innerText = key;
+                title.appendChild(italic);
+            }
+
+            container.appendChild(title);
+            const items = document.createElement('div');
+            items.classList.add('listText', 'goCenter');
+            container.appendChild(items);
+            const unorderedList = document.createElement('ul');
+            items.appendChild(unorderedList);
+            const exps = map[key];
+            exps.forEach(function(exp) {
+                const listItem = document.createElement('li');
+                listItem.innerText = exp.title + " - " + exp.subtitle;
+                unorderedList.appendChild(listItem);
+            });
+            const line = document.createElement('div');
+            line.classList.add('breakBlue');
+            eContain.appendChild(line);
+        }
+    });
+}
+
+function sort(value) {
+    
+    const categoryContainer = {};
+    var options = [];
+    while (eContain.firstChild) {
+        eContain.removeChild(eContain.firstChild);
+    }
+    if (value === "0") {
+
+        var web = experience.filter(function(exp) {
+            return exp.category === "Web";
+        });
+        if (web.length > 0) {
+            categoryContainer['Web'] = web;
+            options.push('Web');
+        }
+
+        var dsa = experience.filter(function(exp) {
+            return exp.category === "DS&A";
+        });
+        if (dsa.length > 0) {
+            categoryContainer['DS&A'] = dsa;
+            options.push('DS&A');
+        }
+
+        var data = experience.filter(function(exp) {
+            return exp.category === "Data";
+        });
+        if (data.length > 0) {
+            categoryContainer['Data'] = data;
+            options.push('Data');
+        }
+
+        var leadership = experience.filter(function(exp) {
+            return exp.category === "Leadership";
+        });
+        if (leadership.length > 0) {
+            categoryContainer['Leadership'] = leadership;
+            options.push('Leadership');
+        }
+
+        var maths = experience.filter(function(exp) {
+            return exp.category === "Math";
+        });
+        if (maths.length > 0) {
+            categoryContainer['Math'] = maths;
+            options.push('Math');
+        }
+
+        populateCategory(options, categoryContainer);
+        
+    }
+    else {
+        var optionsInt = [];
+        experience.forEach(function(exp) {
+            var Sdate = exp.start.split('/')[2];
+            var Edate = exp.end.split('/')[2];
+            if (Sdate != Edate) {
+                var SdateInt = parseInt(Sdate);
+                var EdateInt = parseInt(Edate);
+                while (SdateInt <= EdateInt) {
+                    let currYear = SdateInt.toString();
+                    if (!categoryContainer[currYear]) {
+                        categoryContainer[currYear] = [];
+                        optionsInt.push(SdateInt);
+                    }
+                    categoryContainer[currYear].push(exp);
+                    SdateInt++;
+                }
+            }
+            else {
+                if (!categoryContainer[Sdate]) {
+                    categoryContainer[Sdate] = [];
+                    optionsInt.push(parseInt(Sdate));
+                }
+                categoryContainer[Sdate].push(exp);
+            }
+        });
+        if (value === "1") {
+            optionsInt.sort(function(a, b) {
+                a - b;
+            });
+        }
+        else {
+            optionsInt.sort();
+        }
+        optionsInt.forEach(function(option) {
+            options.push(parseInt(option));
+        });
+
+        populateCategory(options, categoryContainer);
+    }
+}
+
+const selector = document.getElementById('sort');
+selector.addEventListener('click', function() {
+    selector.addEventListener('change', sort(selector.value));
+});
