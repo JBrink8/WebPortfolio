@@ -238,6 +238,22 @@ michText.forEach(function(text) {
     }
 });
 
+
+const nav = document.getElementById('nav');
+$(window).on('scroll', function(){
+    var s = $(window).scrollTop(),
+        d = $(document).height();
+  
+    var scrollPercent = (s / d) * 100;
+    
+    if (scrollPercent > 55) {
+        nav.classList.add('invertColors');
+    }
+    else {
+        nav.classList.remove('invertColors');
+    }
+})
+
 var opt = 2;
 var options = document.querySelectorAll('.CoT');
 options[opt].style.display = 'block';
