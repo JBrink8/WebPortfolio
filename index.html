@@ -17,12 +17,12 @@
     <div class="nav-bar" id ="nav">
 
       <ul class="horz_list">
-          <li><a href="projects.html">Experience</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="terminal.html">Web Terminal</a></li>
           <li><a href="#footer">Contact</a></li>
-          <li><a href="about.html">About Me</a></li>
+          <li><a href="#about">About Me</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="TTO.html">TTO Podcast</a></li>
+          <li><a href="#TTO">TTO Podcast</a></li>
       </ul>
       <div class="dropdown">
           <button class="dropbtn" id="DropButton">
@@ -112,7 +112,7 @@
           </div>
         </div>
 
-        <div class="whatUpDoe subheader rightPush sub-section">
+        <div class="whatUpDoe subheader rightPush sub-section" id="TTO">
 
           <div class="normalText goCenter">
             TTO is a podcast where Matt Berk, fellow Umich student, and I meet up weekly to discuss the latest in technology and entrepreneurship. 
@@ -166,7 +166,7 @@
         </div>
 
     </div>
-      <div class="bulk section">
+      <div class="bulk section" id="about">
         <h1 class="header">My Story</h1>
           <div class="whatUpDoe">
             <div id="getMe" class="biggerText">
@@ -201,19 +201,19 @@
           </div>
     </div>
 
-    <div class="bulk section" id = "swithpoint">
+    <div class="bulk section" id = "experience">
       <div class="TextBox">
         <div class="goCenter">
           <h1 class="header">My Exerience</h1>
         </div>
-        <div class="header dropdownSort normalText">
-          Sort By:
-          <select id="sort">
-            <option value="0">Category</option>
-            <option value="1">Most Current</option>
-            <option value="2">Least Current</option>
-          </select>
-        </div>
+          <div class="header dropdownSort normalText">
+            Sort By:
+            <select id="sort">
+              <option value="0">Category</option>
+              <option value="1">Most Current</option>
+              <option value="2">Least Current</option>
+            </select>
+          </div>
       </div>
 
       <div id = "experWrap">
@@ -328,7 +328,13 @@
 
       </div>
       
+      <div class ="normalText goCenter dropdownSort">
+        Click to learn more about my experience! <br>
+        <button class="Buton" onclick="href=window.location.href='projects.html'">Further Info Page</button>
+      </div>
+
     </div>
+
 
     <div class="spacer"></div>
     <footer id="footer">

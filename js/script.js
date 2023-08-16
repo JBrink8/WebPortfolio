@@ -192,13 +192,6 @@ function checkForVisibility() {
         }
     });
 
-    /*
-    var invert = document.getElementById('last')
-    if (isElementInViewport(invert)) {
-        document.body.classList.remove("invert-colors");
-    } else {
-        document.body.classList.add("invert-colors");
-    }*/
 }
   
   function isElementInViewport(el) {
@@ -254,7 +247,7 @@ $(window).on('scroll', function(){
     }
 })
 
-var opt = 2;
+var opt = 0;
 var options = document.querySelectorAll('.CoT');
 options[opt].style.display = 'block';
 const slide = document.getElementById('sliding');
@@ -265,14 +258,12 @@ slide.style.paddingTop = height + 'px';
 slide.style.paddingBottom = height + 'px';
 
 function changeShow() {
+    options[opt].style.display = 'none';
+    opt++;
     if (opt > options.length - 1) {
         opt = 0;
     }
-    options.forEach(function(option) {
-        option.style.display = 'none';
-    });
     options[opt].style.display = 'block';
-    opt++;
 }
 
 setInterval(changeShow, 3500);
