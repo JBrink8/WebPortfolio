@@ -66,10 +66,12 @@ body {
 }
 
 .bigName {
-    font-size: 8em;
+    font-size: 8vw;
     font-weight: bolder;
     text-align: left;
     width: 50%;
+    filter: drop-shadow(5px 5px 2px black);
+
 }
 .bigCenter {
     font-size: 4em;
@@ -81,6 +83,7 @@ body {
     width: 50%;
     font-size: 2em;
     text-align: right;
+    filter: drop-shadow(5px 5px 2px black);
 }
 
 .horz_scroll {
@@ -116,7 +119,7 @@ body {
   }
   
   .scrolling-text .scrolling-text-content {
-    font-size: 3em;
+    font-size: 3vw;
     white-space: nowrap;
     transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
     line-height: 1em;
@@ -140,10 +143,11 @@ body {
   }
 
   .leftPush {
-    transform: translateX(50px);
+    transform: translateX(20px);
   }
   .rightPush {
-    transform: translateX(-50px);
+    transform: translateX(-20px);
+    overflow: hidden;
   }
 
   .subheaderVisible {
@@ -305,16 +309,29 @@ body {
   .imgContainer {
     text-align: center;
     vertical-align: middle;
+    filter: drop-shadow(10px 10px 5px black);
   }
 
   .whatUpDoe {
     display: grid;
     grid-template-columns: auto auto;
+    grid-gap: 10px;
     width:100%;
     height: fit-content;
     margin: auto;
     text-align: center;
-    
+  }
+  .spaceA {
+    grid-template-columns: 60% 40%;
+  }
+  .spaceB {
+    grid-template-columns: 45% 55%;
+  }
+  .spaceC {
+    grid-template-columns: 75% 25%;
+  }
+  .spaceD {
+    grid-template-columns: 25% 75%;
   }
 
   .wrapper {
@@ -334,6 +351,7 @@ body {
     top: 0;
     padding-left: 5%;
     padding-right: 5%;
+    
   }
 
   .CoT {
@@ -349,21 +367,13 @@ body {
     .imgContainer {
         display:none;
     }
-    .scrolling-text {
-        display:none;
-    }
+
   }
 
-  .stylishTextContain {
-    text-align: left;
-    vertical-align: middle;
-    margin: auto;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
+
 
   .StylishText {
-    font-size: 4.5em;
+    font-size: 4.5vw;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-variant: normal;
     font-weight: bold;

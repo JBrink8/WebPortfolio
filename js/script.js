@@ -298,7 +298,7 @@ function populateCategory(keys, map) {
     keys.forEach(function(key) {
         if(map[key]) {
             const container = document.createElement('div');
-            container.classList.add('whatUpDoe', 'sub-section');
+            container.classList.add('whatUpDoe', 'spaceB','sub-section');
             eContain.appendChild(container);
             const title = document.createElement('div');
             title.classList.add('StylishText', 'makeBlue');
@@ -335,7 +335,7 @@ function populateCategory(keys, map) {
 
             container.appendChild(title);
             const items = document.createElement('div');
-            items.classList.add('listText', 'goCenter');
+            items.classList.add('listText');
             container.appendChild(items);
             const unorderedList = document.createElement('ul');
             items.appendChild(unorderedList);
