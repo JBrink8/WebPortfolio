@@ -134,7 +134,7 @@ body {
   }
 
   .subheader {
-    opacity: 1;
+    opacity: 0;
     transition: all 1.2s ease-out;
     text-align: center;
   }
@@ -147,6 +147,7 @@ body {
   }
 
   .subheaderVisible {
+    opacity: 1;
     transform: translateX(0);
   }
   
