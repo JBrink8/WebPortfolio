@@ -297,6 +297,9 @@ body {
     .dropdown {
         display: none;
     }
+    #sliding {
+        display: none;
+    }
   }
 
   .spacer {
