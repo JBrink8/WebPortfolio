@@ -13,7 +13,7 @@ body, html {
   font-size: 16px;
   line-height: 1.6;
   color: #e0e0e0;
-  background-color: #121212; /* Dark background for tech theme */
+  background-color: #121212d5; /* Dark background for tech theme */
 }
 
 .navbar {
@@ -26,6 +26,11 @@ body, html {
 
 .nav-link:hover {
   color: #f39c12 !important; /* Accent color */
+}
+
+.nav-item {
+  margin-left: 30px; /* Adjust spacing between items */
+  margin-right: 30px; /* Optional: Adjust spacing on the right side too */
 }
 
 .containerHeader {
@@ -44,6 +49,7 @@ body, html {
 }
 
 .header-image {
+  padding: 10px;
   img {
     height: 30vw;
   }
@@ -144,4 +150,70 @@ body, html {
     grid-template-columns: 1fr; /* Single column layout */
     text-align: center; /* Center text alignment for mobile */
   }
+}
+
+/* Styles for Animated Shapes */
+.shapes-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Ignore pointer events */
+  overflow: hidden; /* Hide overflow */
+  z-index: -1; /* Position behind other content */
+}
+
+.shape {
+  position: absolute;
+  opacity: 0.7;
+  animation: spin 12s linear infinite;
+  /* Centering the shapes */
+  transform-origin: center center;
+}
+
+.circle {
+  border-radius: 50%; /* Make it a circle */
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 120px solid transparent; /* Color will be set in JavaScript */
+  position: absolute;
+}
+
+/* Keyframes for rotation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Movement keyframes */
+@keyframes moveUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-50vh); }
+}
+
+@keyframes moveSideToSide {
+  0%, 100% { transform: translateX(-50vw); }
+  50% { transform: translateX(50vw); }
+}
+
+@keyframes moveDiagonal {
+  0% { transform: translate(-50vw, -50vh); }
+  50% { transform: translate(50vw, 50vh); }
+  100% { transform: translate(-50vw, -50vh); }
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1; /* Ensure footer content is on top */
 }
